@@ -5,7 +5,8 @@
     <title>Chia sẻ link ROM/ISO</title>
     <style>
         body {
-            background-image: url('https://picsum.photos/1920/1080');
+            background-color: #1a1a1a; /* Màu nền tối phòng khi ảnh chưa tải kịp */
+            background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://picsum.photos/1920/1080');
             background-size: cover;
             background-repeat: no-repeat;
             background-position: center;
@@ -15,11 +16,18 @@
             color: white;
             padding: 20px;
         }
+        h1 {
+            color: #ffffff;
+        }
         a {
             color: #00ffff;
             font-size: 18px;
             display: block;
             margin: 10px 0;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
         }
         .notice {
             color: #ffeb3b;
@@ -33,7 +41,6 @@
     <h1>Chào mừng đến với trang web của Trần Duy Anh!</h1>
     <p>Tớ sẽ chia sẻ link rom/iso cho Nokia 6.1 2018 và máy tính.</p>
 
-    <!-- Danh sách link của bạn -->
     <h2>Danh sách tải về:</h2>
     <a href="https://sourceforge.net/projects/pl2-sprout/files/TWRP/" target="_blank">🔗 Tải TWRP 3.7.0</a>
     <a href="https://sourceforge.net/projects/pl2-sprout/files/Resurrection-Remix/" target="_blank">🔗 Tải Rom Resurrection Remix</a>
@@ -45,7 +52,6 @@
     <a href="https://download.lineageos.org/devices/PL2/builds/" target="_blank">🔗 Tải ROM LineageOS</a>
     <a href="https://crdroid.net/PL2/11//" target="_blank">🔗 Tải ROM crDroid</a>
 
-    <!-- Dòng thông báo tạm dừng -->
     <p class="notice">⚠️ Tớ sẽ tạm dừng, ngày mai tớ cập nhật tiếp nhé!</p>
 </body>
 </html>
