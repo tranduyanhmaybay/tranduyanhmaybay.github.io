@@ -89,11 +89,22 @@
     <a href="https://www.microsoft.com/en-us/software-download/windows11/" target="_blank">🔗 Tải Windows 11</a>
     <a href="https://www.microsoft.com/en-us/software-download/windows10/" target="_blank">🔗 Tải Windows 10</a>
     
-    <!-- Bộ đếm lượt truy cập dùng Hittracker -->
+    <!-- Bộ đếm dạng chữ thuần túy -->
     <div class="viewer-count">
-        👁️ Tổng lượt truy cập: <img src="https://count.getloli.com/get/@tranduyanh-rom-site?theme=rule34" alt="hits" style="vertical-align: middle; border: none;"/>
+        👁️ Tổng lượt truy cập: <span id="visit-count">Đang tải...</span> người
     </div>
 
     <p class="notice">⚠️ Tớ sẽ tạm dừng, ngày mai tớ cập nhật tiếp nhé!</p>
+
+    <script>
+        fetch('https://api.counterapi.dev/v1/tranduyanh-rom-site/visits/up')
+            .then(res => res.json())
+            .then(data => {
+                document.getElementById('visit-count').innerText = data.count;
+            })
+            .catch(() => {
+                document.getElementById('visit-count').innerText = "1";
+            });
+    </script>
 </body>
 </html>
