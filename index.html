@@ -34,6 +34,13 @@
             margin-top: 20px;
             font-size: 18px;
         }
+        .viewer-count {
+            color: #00ffcc;
+            font-size: 16px;
+            margin-top: 25px;
+            margin-bottom: 15px;
+            font-weight: bold;
+        }
     </style>
 </head>
 <body>
@@ -64,20 +71,34 @@
     <a href="https://iode.lineage.microg.org/PL2/" target="_blank">🔗 Tải ROM iodé OS</a>
     <a href="https://sourceforge.net/projects/aospextended-rom/files/PL2/" target="_blank">🔗 Tải ROM AEX</a>
     <a href="https://www.techmesto.com/nokia-6-1-6-1-plus-7-plus-receive-official-android-10-updates-download-links/" target="_blank">🔗 Tải Stock ROM</a>
+    
     <h2>Danh sách tải về hệ điều hành Linux cho máy tính</h2>
     <a href="https://ubuntu.com/desktop/" target="_blank">🔗 Tải Ubuntu</a>
     <a href="https://kubuntu.org/download/" target="_blank">🔗 Tải Kubuntu</a>
     <a href="https://xubuntu.org/download/" target="_blank">🔗 Tải Xubuntu</a>
-    <a href="https://fedoraproject.org/vi/" target="_blank">🔗 Tải Feroda</a>
+    <a href="https://fedoraproject.org/vi/" target="_blank">🔗 Tải Fedora</a>
     <a href="https://cachyos.org/download/" target="_blank">🔗 Tải CachyOS</a>
-     <h2>Danh sách tải về Windows từ link MAS</h2>
+    
+    <h2>Danh sách tải về Windows từ link MAS</h2>
     <a href="https://massgrave.dev/windows_11_links/" target="_blank">🔗 Tải Windows 11</a>
     <a href="https://massgrave.dev/windows_10_links/" target="_blank">🔗 Tải Windows 10</a>
     <a href="https://massgrave.dev/windows_ltsc_links/" target="_blank">🔗 Tải Windows LTSC</a>
     <a href="https://massgrave.dev/windows-server-links/" target="_blank">🔗 Tải Windows Server</a>
-    <h2>Danh sách tải về Windows từ link Microsort</h2>
+    
+    <h2>Danh sách tải về Windows từ link Microsoft</h2>
     <a href="https://www.microsoft.com/en-us/software-download/windows11/" target="_blank">🔗 Tải Windows 11</a>
     <a href="https://www.microsoft.com/en-us/software-download/windows10/" target="_blank">🔗 Tải Windows 10</a>
+    
+    <!-- Đoạn hiển thị số người xem tự động -->
+    <div class="viewer-count">
+        👁️ Đang trực tuyến: <span id="view-count">1</span> người xem
+    </div>
+
     <p class="notice">⚠️ Tớ sẽ tạm dừng, ngày mai tớ cập nhật tiếp nhé!</p>
+
+    <script>
+        // Cố định hiển thị 1 người xem (hoặc bạn có thể tuỳ chỉnh trong này)
+        document.getElementById("view-count").innerText = "1";
+    </script>
 </body>
 </html>
