@@ -89,30 +89,11 @@
     <a href="https://www.microsoft.com/en-us/software-download/windows11/" target="_blank">🔗 Tải Windows 11</a>
     <a href="https://www.microsoft.com/en-us/software-download/windows10/" target="_blank">🔗 Tải Windows 10</a>
     
+    <!-- Bộ đếm lượt truy cập dùng Hittracker -->
     <div class="viewer-count">
-        👁️ Tổng lượt truy cập: <span id="visits">Đang tải...</span>
+        👁️ Tổng lượt truy cập: <img src="https://count.getloli.com/get/@tranduyanh-rom-site?theme=rule34" alt="hits" style="vertical-align: middle; border: none;"/>
     </div>
 
     <p class="notice">⚠️ Tớ sẽ tạm dừng, ngày mai tớ cập nhật tiếp nhé!</p>
-
-    <script>
-        // Tự động gọi API đếm số lượng truy cập dùng chung cho mọi máy
-        fetch('https://api.countapi.xyz/hit/tranduyanh-rom-site/visits')
-            .then(async response => {
-                if (!response.ok) {
-                    // Nếu lỗi thì tạo mới namespace tự động
-                    await fetch('https://api.countapi.xyz/create?namespace=tranduyanh-rom-site&key=visits&value=1');
-                    return fetch('https://api.countapi.xyz/hit/tranduyanh-rom-site/visits');
-                }
-                return response.json();
-            })
-            .then(res => res.json())
-            .then(data => {
-                document.getElementById('visits').innerText = data.value;
-            })
-            .catch(() => {
-                document.getElementById('visits').innerText = "1";
-            });
-    </script>
 </body>
 </html>
