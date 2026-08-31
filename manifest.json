@@ -1,0 +1,13 @@
+{
+  "background_color": "#ffffff",
+  "dir": "ltr",
+  "display": "standalone",
+  "name": "Tổng hợp link Nokia 6.1 2018 và máy tính by Tran Duy Anh",
+  "orientation": "any",
+  "scope": "/",
+  "short_name": "Tổng hợp link by Tran Duy Anh",
+  "start_url": "/",
+  "theme_color": "#ffffff",
+  "id": "com.tranduyanh.tonghoplinkrom",
+  "description": "Ứng dụng link cho Nokia 6.1 2018 và Máy Tính"
+}
